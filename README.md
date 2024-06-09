@@ -1,4 +1,4 @@
-In this course I got to experience working with advanced Machine Learning and Deep Learning algorithms and implement the knowledge gained in various exercises and a final project:</br>
+In this course I got to experience working with advanced Machine Learning and Deep Learning algorithms and implement the knowledge gained in various exercises and a final project:</br></br>
 1 - Assignment 1 - The project aims to develop an accurate and reliable model to predict daily bicycle rental demand using a bike sharing dataset by analyzing data and testing various modeling techniques.</br>
 2 - Assignment 2 - The project aims to develop a model to distinguish dialogue lines from the TV shows Seinfeld and Friends, using a dataset with dialogue text, character information, and show labels, and evaluate its accuracy on a test set while exploring model performance for each character.</br>
 Final Project - The project aims to build and evaluate models for a recommendation system that suggests the top 10 songs to a user based on their musical preferences, ultimately enhancing their music listening experience.</br>
