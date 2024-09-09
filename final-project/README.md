@@ -33,61 +33,62 @@ These files were downloaded from external sources, and preprocessing steps were 
 ### 3. **Deep Learning (Neural Networks)**
 - A **Keras-based neural network** was implemented, where user and song embeddings were learned in a latent space. The network predicts a user’s preference for a song based on learned features.
 
+Here is the updated **Evaluation** section:
+
+---
+
 ## Evaluation
 
-The models were evaluated using the following advanced metrics, incorporating thresholding to refine recommendation relevance:
+The models were evaluated using the following advanced metrics, incorporating a threshold-based approach to refine recommendation relevance:
 
 ### **Threshold-Based Evaluation Approach**
-- In this project, we used a **threshold-based system** to define relevance. A song is considered **relevant** if its rating meets or exceeds a certain threshold (e.g., a rating of 3 or more).
-- Similarly, a song is considered **recommended** if its predicted rating meets or exceeds a specific threshold (e.g., a prediction score of 3 or more).
+In this project, we applied a **threshold-based system** to define relevance. A song is considered **relevant** if its actual rating meets or exceeds a certain threshold (e.g., a rating of 3 or more). Similarly, a song is considered **recommended** if its predicted rating meets or exceeds a specific threshold (e.g., a prediction score of 3 or more). 
 
-This thresholding system allows for more granular control in evaluating the quality of recommendations, ensuring that both predicted and actual ratings are high enough to be considered relevant.
+This thresholding mechanism ensures that only songs with sufficiently high predicted and actual ratings are considered when calculating evaluation metrics.
 
 ### **Precision@K**
-**Precision@K** measures how many of the top K recommendations are relevant, with the additional condition that both the predicted and actual ratings must meet the threshold.
+**Precision@K** measures how many of the top K recommended songs are relevant (i.e., meet the relevance threshold for both prediction and rating). It indicates the accuracy of the recommendations at K.
 
 \[
 \text{Precision@K} = \frac{\text{# of recommended items @K that are relevant}}{\text{# of recommended items @K}}
 \]
 
-For example, if 7 out of the top 10 recommended songs meet the relevance threshold, the **Precision@K** would be:
+For instance, if 7 out of the top 10 recommended songs meet the relevance threshold, the **Precision@10** would be:
 
 \[
 \text{Precision@10} = \frac{7}{10} = 0.7
 \]
 
 ### **Recall@K**
-**Recall@K** measures how many of the relevant songs (based on actual ratings) were successfully recommended, also considering the prediction threshold.
+**Recall@K** measures how many of the relevant songs (based on actual ratings) were successfully recommended in the top K recommendations. This metric focuses on the ability of the system to retrieve all relevant items.
 
 \[
 \text{Recall@K} = \frac{\text{# of recommended items @K that are relevant}}{\text{total # of relevant items}}
 \]
 
-For example, if 8 songs in total meet the relevance threshold, and 6 of them are successfully recommended in the top 10 predictions, the **Recall@K** would be:
+For example, if a user has 8 songs in total that meet the relevance threshold and 6 of them are successfully recommended in the top 10 predictions, the **Recall@10** would be:
 
 \[
 \text{Recall@10} = \frac{6}{8} = 0.75
 \]
 
 ### **F1-Score@K**
-**F1-Score@K** provides a balance between Precision and Recall, offering a single metric that summarizes the accuracy of the recommendations:
+The **F1-Score@K** provides a balance between Precision and Recall. It is useful when you want to combine the benefits of both metrics and achieve a good balance between recommending enough relevant items while keeping accuracy high.
 
 \[
 \text{F1\_score@K} = \frac{2 \times \left( \text{Precision@K} \times \text{Recall@K} \right)}{\text{Precision@K} + \text{Recall@K}}
 \]
 
-This helps in balancing the trade-off between precision and recall, where one might be higher at the expense of the other.
-
 ### **Mean Squared Error (MSE)**
-MSE measures the average of the squared differences between actual and predicted values for the play counts. A lower MSE indicates better model performance.
+MSE is used to measure the average of the squared differences between actual and predicted values for the play counts. A lower MSE indicates better performance by the model in predicting the user’s interaction with songs.
 
 ### **Mean Absolute Error (MAE)**
-MAE measures the average of the absolute differences between predicted and actual values. It evaluates the accuracy of the predicted play counts and serves as a complement to MSE.
+MAE measures the average absolute differences between predicted and actual values. It helps evaluate how close the predicted play counts are to the actual values, complementing MSE by offering a more interpretable error metric.
 
 ### **Model Comparison**
-- **Precision@K** and **Recall@K** were used to compare how well the models recommended relevant songs to users, incorporating the threshold-based relevance.
-- **Matrix Factorization (SVD)** emerged as the best-performing model for personalized recommendations.
-- **Content-based filtering** (TF-IDF + Cosine Similarity) was useful for finding similar songs but did not perform as well for personalized recommendations as collaborative filtering models.
+- **Precision@K** and **Recall@K** were key metrics used to compare how well the models recommended relevant songs to users, taking the threshold-based relevance into account.
+- **Matrix Factorization (SVD)** demonstrated superior performance for personalized recommendations.
+- **Content-based filtering** (TF-IDF + Cosine Similarity) was effective at finding similar songs but less successful in personalizing recommendations compared to collaborative filtering models.
 
 ## Results
 
