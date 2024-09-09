@@ -88,9 +88,6 @@ MAE measures the average absolute difference between predicted and actual values
 - **Matrix Factorization (SVD)** performed the best in delivering personalized recommendations.
 - **Content-based filtering** (TF-IDF + Cosine Similarity) was effective at finding similar songs but less effective in personalizing recommendations compared to collaborative filtering models.
 
----
-
-This version uses plain text for equations, making it compatible with GitHub Markdown. Let me know if you'd like further refinements!
 
 ## Results
 
