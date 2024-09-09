@@ -1,7 +1,3 @@
-Here’s the updated **README** for your project with more advanced details about the evaluation metrics, including your threshold-based approach for **Precision@K** and **Recall@K**.
-
----
-
 # Music Recommendation System - Final Project
 
 This repository contains the code and documentation for a **Music Recommendation System** developed as part of a machine learning and deep learning course. The system is designed to recommend the top 10 songs to users based on their listening history and preferences using various recommendation techniques such as content-based filtering, collaborative filtering, and deep learning models.
