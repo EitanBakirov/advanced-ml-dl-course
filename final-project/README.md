@@ -46,46 +46,51 @@ This thresholding mechanism ensures that only songs with sufficiently high predi
 ### **Precision@K**
 **Precision@K** measures how many of the top K recommended songs are relevant (i.e., meet the relevance threshold for both prediction and rating). It indicates the accuracy of the recommendations at K.
 
-\[
-\text{Precision@K} = \frac{\text{# of recommended items @K that are relevant}}{\text{# of recommended items @K}}
-\]
+Formula:
+```
+Precision@K = (Number of relevant items in top K recommendations) / (Number of items recommended at K)
+```
 
-For instance, if 7 out of the top 10 recommended songs meet the relevance threshold, the **Precision@10** would be:
-
-\[
-\text{Precision@10} = \frac{7}{10} = 0.7
-\]
+For example, if 7 out of the top 10 recommended songs meet the relevance threshold, the **Precision@10** would be:
+```
+Precision@10 = 7 / 10 = 0.7
+```
 
 ### **Recall@K**
-**Recall@K** measures how many of the relevant songs (based on actual ratings) were successfully recommended in the top K recommendations. This metric focuses on the ability of the system to retrieve all relevant items.
+**Recall@K** measures how many of the relevant songs (based on actual ratings) were successfully recommended in the top K recommendations. This metric focuses on the system's ability to retrieve all relevant items.
 
-\[
-\text{Recall@K} = \frac{\text{# of recommended items @K that are relevant}}{\text{total # of relevant items}}
-\]
+Formula:
+```
+Recall@K = (Number of relevant items in top K recommendations) / (Total number of relevant items)
+```
 
 For example, if a user has 8 songs in total that meet the relevance threshold and 6 of them are successfully recommended in the top 10 predictions, the **Recall@10** would be:
-
-\[
-\text{Recall@10} = \frac{6}{8} = 0.75
-\]
+```
+Recall@10 = 6 / 8 = 0.75
+```
 
 ### **F1-Score@K**
-The **F1-Score@K** provides a balance between Precision and Recall. It is useful when you want to combine the benefits of both metrics and achieve a good balance between recommending enough relevant items while keeping accuracy high.
+The **F1-Score@K** balances Precision and Recall. It is useful when combining both metrics to achieve a good balance between recommending enough relevant items and keeping accuracy high.
 
-\[
-\text{F1\_score@K} = \frac{2 \times \left( \text{Precision@K} \times \text{Recall@K} \right)}{\text{Precision@K} + \text{Recall@K}}
-\]
+Formula:
+```
+F1-Score@K = 2 * (Precision@K * Recall@K) / (Precision@K + Recall@K)
+```
 
 ### **Mean Squared Error (MSE)**
-MSE is used to measure the average of the squared differences between actual and predicted values for the play counts. A lower MSE indicates better performance by the model in predicting the user’s interaction with songs.
+MSE measures the average squared difference between actual and predicted values for play counts. A lower MSE indicates better performance by the model in predicting user interactions with songs.
 
 ### **Mean Absolute Error (MAE)**
-MAE measures the average absolute differences between predicted and actual values. It helps evaluate how close the predicted play counts are to the actual values, complementing MSE by offering a more interpretable error metric.
+MAE measures the average absolute difference between predicted and actual values. It helps evaluate how close the predicted play counts are to the actual values, offering a more interpretable error metric alongside MSE.
 
 ### **Model Comparison**
-- **Precision@K** and **Recall@K** were key metrics used to compare how well the models recommended relevant songs to users, taking the threshold-based relevance into account.
-- **Matrix Factorization (SVD)** demonstrated superior performance for personalized recommendations.
-- **Content-based filtering** (TF-IDF + Cosine Similarity) was effective at finding similar songs but less successful in personalizing recommendations compared to collaborative filtering models.
+- **Precision@K** and **Recall@K** were the key metrics used to compare how well the models recommended relevant songs to users, considering the threshold-based relevance.
+- **Matrix Factorization (SVD)** performed the best in delivering personalized recommendations.
+- **Content-based filtering** (TF-IDF + Cosine Similarity) was effective at finding similar songs but less effective in personalizing recommendations compared to collaborative filtering models.
+
+---
+
+This version uses plain text for equations, making it compatible with GitHub Markdown. Let me know if you'd like further refinements!
 
 ## Results
 
@@ -115,3 +120,6 @@ To run the project locally just click on the 'Open in Colab' at the top of the f
 - **Shiraz Israeli**
 - **Yuval Bakirov**
 - **Eitan Bakirov**
+- 
+
+
