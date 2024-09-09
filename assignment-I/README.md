@@ -6,9 +6,9 @@ This project focuses on predicting daily bicycle rental demand using various mac
 
 The project is structured as follows:
 
-- `data/`: Contains the dataset used for prediction.
+- `train.csv` and `test.csv`: Contain the dataset used for training and prediction.
 - `assignment-I-group-4.ipynb`: The main Jupyter Notebook containing the code for data preprocessing, model training, and evaluation.
-- `results/`: This directory stores the model results and evaluation metrics.
+- `exercise1.csv`: This csv stores the model results and evaluation metrics.
 
 ## Dataset
 
