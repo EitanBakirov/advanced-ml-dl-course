@@ -33,9 +33,6 @@ These files were downloaded from external sources, and preprocessing steps were 
 ### 3. **Deep Learning (Neural Networks)**
 - A **Keras-based neural network** was implemented, where user and song embeddings were learned in a latent space. The network predicts a user’s preference for a song based on learned features.
 
-Here is the updated **Evaluation** section:
-
----
 
 ## Evaluation
 
