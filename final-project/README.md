@@ -117,6 +117,4 @@ To run the project locally just click on the 'Open in Colab' at the top of the f
 - **Shiraz Israeli**
 - **Yuval Bakirov**
 - **Eitan Bakirov**
-- 
-
 
