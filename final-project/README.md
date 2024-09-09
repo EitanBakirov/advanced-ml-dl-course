@@ -1,7 +1,3 @@
-Here's a sample **README** for your music recommendation system project:
-
----
-
 # Music Recommendation System - Final Project
 
 This repository contains the code and documentation for a **Music Recommendation System** developed as part of a machine learning and deep learning course. The system is designed to recommend the top 10 songs to users based on their listening history and preferences using various recommendation techniques such as content-based filtering, collaborative filtering, and deep learning models.
@@ -50,26 +46,6 @@ The models were evaluated using the following metrics:
 - **Content-based filtering** was effective in recommending similar songs but did not personalize recommendations as well as collaborative filtering techniques.
 - A **hybrid approach** combining content-based and collaborative filtering models is recommended for achieving the most accurate and personalized recommendations.
 
-## Installation and Setup
-
-To run the project locally, follow these steps:
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/recommendation-system-project.git
-    cd recommendation-system-project
-    ```
-
-2. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the Jupyter Notebook:
-    ```bash
-    jupyter notebook recommendation-system-project.ipynb
-    ```
-
 ## Usage
 
 1. **Preprocessing**: The notebook walks through data preprocessing, including downloading the dataset, cleaning it, and merging user interactions with song metadata.
@@ -89,10 +65,4 @@ To run the project locally, follow these steps:
 - **Yuval Bakirov**
 - **Eitan Bakirov**
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to update the repository URL, contributor names, and other details as needed. Let me know if you'd like to modify anything in the README!
