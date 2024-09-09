@@ -64,7 +64,7 @@ Based on the best-performing model (CNN), the final results are:
 
 ## How to Run
 
-At the top of the file - "Open in Colab"
+At the top of the file - "Open in Colab".<br>
 After running the notebook, the results will be saved in the `exercise3.csv` file.
 
 ## Conclusion
