@@ -18,6 +18,25 @@ The dataset includes the following features:
 - **Time-based features** (e.g., hour, day of the week, month)
 - **Categorical features** (e.g., season, working day, holiday)
 
+## Exploratory Data Analysis (EDA)
+
+The EDA phase of this project focuses on understanding the dataset's key features and distributions to inform the modeling phase. The following analysis steps were performed:
+
+1. **Summary Statistics**: Basic statistical insights (mean, median, variance) were calculated for the continuous features like temperature, windspeed, and pollution levels.
+2. **Visualizations**:
+   - **Histograms** for continuous variables like temperature and pollution to observe their distributions.
+   - **Bar charts** to analyze categorical features such as season and weather.
+   - **Time Series Plots** for observing bicycle rental demand across hours, days, and months to capture any seasonal or time-based patterns.
+3. **Correlation Analysis**: A correlation heatmap was generated to understand the relationships between features such as temperature, humidity, and rental demand. Features showing high correlation with rental demand (like temperature) were identified for feature selection.
+4. **Feature Engineering**: New features such as `log_pollution`, `dayInWeek`, and `dayInMonth` were created to capture additional information that could improve model performance.
+
+### Key Findings from EDA:
+
+- **Seasonal Trends**: Bicycle rentals tend to peak during warmer months and fall during colder periods, as expected.
+- **Time-based Demand**: The demand is higher during working days and during specific hours, such as morning and evening commute times.
+- **Weather Impact**: Features like temperature and pollution have noticeable effects on bicycle rental demand. Higher temperatures generally correlate with increased rentals.
+
+
 ## Models Used
 
 Several machine learning models were used in this project to predict bicycle rental demand:
