@@ -137,9 +137,9 @@ The **F1-Score@K** balances Precision and Recall. It is useful when combining bo
 F1-Score@K = 2 * (Precision@K * Recall@K) / (Precision@K + Recall@K)
 ```
 
-### Mean Squared Error (MSE)
+### Root Mean Squared Error (RMSE)
 
-MSE measures the average squared difference between actual and predicted values for play counts. A lower MSE indicates better performance by the model in predicting user interactions with songs.
+RMSE measures the average root squared difference between actual and predicted values for play counts. A lower RMSE indicates better performance by the model in predicting user interactions with songs.
 
 ### Mean Absolute Error (MAE)
 
