@@ -2,6 +2,8 @@
 
 This repository contains the code and documentation for a **Music Recommendation System** project developed as part of a machine learning and deep learning course. The project explores multiple models for recommending songs based on user preferences and item features. The goal is to recommend the top 10 songs to users based on their listening history and other relevant data.
 
+Link to Project - [Colab](https://github.com/EitanBakirov/advanced-ml-dl-course/blob/main/final-project/recommendation-system-project-group-4-enhanced.ipynb)
+
 ## Group Members
 - **Ariel Hedvat**
 - **Eitan Bakirov**
